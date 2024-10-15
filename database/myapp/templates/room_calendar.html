@@ -1,0 +1,31 @@
+<!-- myapp/templates/room_calendar.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Room Booking Calendar</title>
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.css' rel='stylesheet' />
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.11.0/main.min.js'></script>
+</head>
+<body>
+    <h1>Room Booking Calendar</h1>
+    
+    <!-- Link/button for booking a room -->
+    <a href="{% url 'book_room' %}">Book a Room</a>
+
+    <!-- Calendar Div -->
+    <div id="calendar"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('calendar');
+            var calendar = new FullCalendar.Calendar(calendarEl, {
+                initialView: 'dayGridMonth',
+                events: {{ events|safe }},  // Inject events into calendar (prevents auto-escaping)
+                eventColor: '#378006',  // Optional: Add color to events
+            });
+            calendar.render();
+        });
+    </script>
+</body>
+</html>

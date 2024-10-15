@@ -1,0 +1,33 @@
+<!-- myapp/templates/book_room.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book a Room</title>
+    <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+    <h1>Book a Room</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Book</button>
+    </form>
+
+    <script>
+        // Initialize the date picker for the start_time and end_time fields
+        flatpickr("input[name='start_time']", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+        });
+        flatpickr("input[name='end_time']", {
+            enableTime: true,
+            dateFormat: "Y-m-d H:i",
+        });
+    </script>
+
+    <a href="{% url 'room_calendar' %}">Back to Calendar</a>
+</body>
+</html>

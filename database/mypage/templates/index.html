@@ -1,0 +1,72 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EasyBook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="home-section">
+    <nav>
+      <a href="https://www.it.kmitl.ac.th/th/" target="_blank">
+        <img class="it-logo" src="{% static 'img/IT logo.svg' %}">
+      </a>
+      <div class="easybook-logo">
+        <a href="https://github.com/KhanunKup/PSCP-PROJECT-Y1" target="_blank" style="text-decoration: none;">
+          <span style="color: #2255A4;">EASY</span><span style="color: #FE6612;">BOOK</span>
+        </a>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-text">Make booking Creative rooms easier with <span style="color: #2255A4;">EASY</span><span
+          style="color: #FE6612;">BOOK</span></div>
+      <img class="hero-decoration" src="{% static 'img/hero decoration.svg' %}">
+    </div>
+
+    <div class="room-select">
+      <!-- <img class="room-select-decoration" src="img/room select.svg"> -->
+      <div class="room-select-text">
+        <div class="main-room-select-text">
+          You can choose <br> all four rooms below
+        </div>
+        <div class="sub-room-select-text">
+          <span style="color: #F00;">rooms available for booking</span> <br>
+          Creative and Ideation 1 <br>
+          Peer Tutor 1 ,Peer Tutor 2 and Peer Tutor 3
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="operate-section">
+      <img class="room-pic" src="{% static 'img/room-img/IMG transition creative.svg' %}">
+      <img class="room-pic" src="{% static 'img/room-img/IMG transition peer 1.svg' %}">
+      <img class="room-pic" src="{% static 'img/room-img/IMG transition peer2.svg' %}">
+      <img class="room-pic" src="{% static 'img/room-img/IMG transition peer3.svg' %}">
+  </div>
+
+  <footer class="footer-container">
+    <div class="copy-right">
+      @EASYBOOK
+    </div>
+    <div class="author">     
+      <div class="author-spec">
+        Made by
+        <a href="https://github.com/KhanunKup" target="_blank" style="text-decoration: none;">@KhanunKup</a> &
+        <a href="https://github.com/Au4uztOLsen" target="_blank" style="text-decoration: none;">@Au4uztOLsen</a> &
+        <a href="https://github.com/EFeriTE" target="_blank" style="text-decoration: none;">@EFeriTE</a> &
+        <a href="https://github.com/megabitsss" target="_blank" style="text-decoration: none;">@megabitsss</a> &
+        <a href="https://github.com/Krjamwat" target="_blank" style="text-decoration: none;">@Krjamwat</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
