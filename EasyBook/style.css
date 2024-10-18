@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+	font-family: Outfit,Arial, Helvetica, sans-serif;
+}
+
+.home-section {
+  padding-top: 3.125rem;
+}
+
+nav {
+	display: flex;
+  align-items: center;
+	justify-content: space-around;
+	margin-bottom: 5rem;
+}
+
+.it-logo:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.easybook-logo {
+  font-size: 48px; 
+  font-weight: 700;
+}
+
+.easybook-logo:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.hero {
+	display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6.25rem;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.hero-text {
+	width: 47rem;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+	font-size: 4.5rem;
+	font-weight: 700;
+	line-height: normal;
+}
+
+.hero-decoration {
+  width: 100%;
+	max-width: 476px;
+}
+
+.room-select {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 6.25rem;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.room-select-decoration {
+  width: 100%;
+	max-width: 476px;
+}
+
+.room-select-text {
+  width: 540px;
+}
+
+.main-room-select-text {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: Outfit;
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sub-room-select-text {
+  font-family: Outfit;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.operate-section {
+  display: flex;
+  row-gap: 5.625rem;
+  flex-wrap: wrap;
+  margin-bottom: 6.25rem;
+  justify-content: space-evenly;
+}
+
+.room-pic {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 37.5rem;
+  height: auto;
+  transition: 0.15s;
+}
+
+.room-pic:hover {
+  scale: 1.05;
+  opacity: 0.7;
+}
+
+footer {
+  padding: 1rem;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding-left: 5.3125rem;
+  padding-right: 5.3125rem;
+  justify-content: space-between;
+  background-color: #2255A4;
+}
+
+.author {
+  display: flex;
+}
+
+.author-spec {
+  cursor: pointer;
+  margin-left: 0.625rem;
+}
+
+a {
+  color: #FE6612;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+a:active {
+  color: #f4b18d;
+}
+
+@media (max-width: 430px) {
+  .it-logo {
+    max-width: 9rem;
+  }
+
+  .easybook-logo {
+    font-size: 1.8rem;
+  }
+
+  .hero-text {
+    margin-left: 10%;
+    font-size: 3rem;
+  }
+
+  .hero-decoration {
+    scale: 0.8;
+  }
+
+  .main-room-select-text {
+    margin-left: 10%;
+    font-size: 2rem;
+  }
+
+  .sub-room-select-text {
+    font-size: 0.875rem;
+    margin-left: 10%;
+  }
+
+  .room-pic {
+    scale: 0.85;
+  }
+
+  footer {
+    flex-direction: column;
+    font-size: 0.75rem;
+  }
+}

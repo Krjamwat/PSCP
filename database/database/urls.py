@@ -20,7 +20,5 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('calendar/', include('myapp.urls')),  # Include your app's URLs
-    #path('', RedirectView.as_view(url='/calendar/')),  # Redirect root to /calendar/
     path('',include('mypage.urls')),
 ]
